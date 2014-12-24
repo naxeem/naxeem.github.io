@@ -1,6 +1,11 @@
 @import "base/reset";
 @import "bourbon", "neat";
 
+$mobile: 480px;
+$tablet: 768px;
+$md: 992px;
+$lg: 1200px;
+
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #fff;
@@ -15,6 +20,10 @@ body {
 	
 	.page-title {
 		@include span-columns(3);
+
+		@include media(max-width $tablet) {
+			@include span-columns(5);
+		}
 
 		h1 {
 			margin: 0;
@@ -46,6 +55,10 @@ body {
 	.contact-info {
 		@include span-columns(3);
 
+		@include media(max-width $tablet) {
+			@include span-columns(6);
+		}
+
 		a {
 			display: block;
 			color: #333;
@@ -60,6 +73,12 @@ body {
 	}
 	.header-quote {
 		@include span-columns(6);
+
+		@include media(max-width $tablet) {
+			@include span-columns(12);
+
+			margin-top: 30px;
+		}
 
 		border-bottom: 1px solid #333;
 
@@ -85,10 +104,14 @@ body {
 	.text {
 		@include span-columns(8);
 
+		@include media(max-width $mobile) {
+			@include span-columns(12);
+		}
+
 		p {
 			font-size: 16px;
 			line-height: 25px;
-			padding: 0 0 40px 0;
+			padding: 0 0 30px 0;
 			margin: 0;
 		}
 	}
@@ -96,6 +119,11 @@ body {
 		overflow: hidden; 
 
 		@include span-columns(4);
+
+		@include media(max-width $mobile) {
+			// @include span-columns(12);
+			display: none;
+		}
 
 		img {
 			width: 100%;
@@ -112,6 +140,10 @@ body {
 
 .skills {
 	@include span-columns(6);
+
+	@include media(max-width $mobile) {
+		@include span-columns(12);
+	}
 
 	ul {
 		margin: 0;
@@ -164,6 +196,10 @@ body {
 .experience {
 	@include span-columns(6);
 
+	@include media(max-width $mobile) {
+		@include span-columns(12);
+	}
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -206,7 +242,7 @@ body {
 	@include outer-container;
 
 	max-width: 940px;
-	padding: 45px 0;
+	padding: 45px 15px;
 
 	ul {
 		margin: 0;
@@ -218,10 +254,20 @@ body {
 		list-style: none;
 
 		@include span-columns(6);
+
+		@include media(max-width $tablet) {
+			@include span-columns(12);
+
+			margin-bottom: 20px;
+		}
 	}
 
 	.image {
 		@include span-columns(2 of 6);
+
+		img {
+			width: 100%;
+		}
 	}
 	.info {
 		@include span-columns(4 of 6);

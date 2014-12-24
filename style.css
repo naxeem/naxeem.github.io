@@ -383,6 +383,14 @@ body {
     width: 23.23176%; }
     .page-header .page-title:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .page-header .page-title {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%; }
+        .page-header .page-title:last-child {
+          margin-right: 0; } }
     .page-header .page-title h1 {
       margin: 0;
       padding: 0;
@@ -408,6 +416,14 @@ body {
     width: 23.23176%; }
     .page-header .contact-info:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .page-header .contact-info {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .page-header .contact-info:last-child {
+          margin-right: 0; } }
     .page-header .contact-info a {
       display: block;
       color: #333;
@@ -424,6 +440,15 @@ body {
     border-bottom: 1px solid #333; }
     .page-header .header-quote:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .page-header .header-quote {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-top: 30px; }
+        .page-header .header-quote:last-child {
+          margin-right: 0; } }
     .page-header .header-quote blockquote {
       font-style: normal;
       color: #333;
@@ -450,10 +475,18 @@ body {
     width: 65.88078%; }
     .summary .text:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      .summary .text {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .summary .text:last-child {
+          margin-right: 0; } }
     .summary .text p {
       font-size: 16px;
       line-height: 25px;
-      padding: 0 0 40px 0;
+      padding: 0 0 30px 0;
       margin: 0; }
   .summary .image {
     overflow: hidden;
@@ -463,6 +496,9 @@ body {
     width: 31.76157%; }
     .summary .image:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      .summary .image {
+        display: none; } }
     .summary .image img {
       width: 100%; }
 
@@ -484,6 +520,14 @@ body {
   width: 48.82117%; }
   .skills:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .skills {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .skills:last-child {
+        margin-right: 0; } }
   .skills ul {
     margin: 0;
     padding: 0; }
@@ -517,6 +561,14 @@ body {
   width: 48.82117%; }
   .experience:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .experience {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .experience:last-child {
+        margin-right: 0; } }
   .experience ul {
     margin: 0;
     padding: 0; }
@@ -548,7 +600,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 940px;
-  padding: 45px 0; }
+  padding: 45px 15px; }
   .education:after {
     content: "";
     display: table;
@@ -566,6 +618,15 @@ body {
     width: 48.82117%; }
     .education li:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .education li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-bottom: 20px; }
+        .education li:last-child {
+          margin-right: 0; } }
   .education .image {
     float: left;
     display: block;
@@ -573,6 +634,8 @@ body {
     width: 30.11389%; }
     .education .image:last-child {
       margin-right: 0; }
+    .education .image img {
+      width: 100%; }
   .education .info {
     float: left;
     display: block;
