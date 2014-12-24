@@ -1,0 +1,102 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+@charset "UTF-8";
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}
+mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;
+position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}
+svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;
+box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;
+font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button{overflow:visible}button,select{text-transform:none}button,html input[type=button],
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],
+html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;
+box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;
+margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}
+table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+body,
+html {
+	color: #707C80;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	background-color: #F6F6F6;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-rendering: optimizelegibility;
+}
+a {
+	text-decoration: none;
+	color: #707C80;
+}
+
+* {
+    outline: none;
+}
+
+.container, header.header {
+	margin:0 auto;
+	width:100%;
+	max-width:960px;
+}
+div.propic {
+	margin:15% auto 15px auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	background: #fff url(./images/me.jpg) no-repeat top center;
+	background-size: 160px;
+	border:4px solid #e2e2e2;
+}
+span.name {
+	font-size: 1.4em;
+	margin:0;
+	color:#222;
+}
+span.designation {
+	font-size:1em;
+	color:#555;
+}
+span.name, span.designation {
+	text-align: center;
+	display: block;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+	cursor:default;
+}
+.nav {
+	padding:30px 0 0 0;
+	text-align: center;
+}
+.nav > ul {
+	margin:0;
+	padding:0;
+}
+.nav > ul > li {
+	list-style:none;
+	display:inline-block;
+}
+.nav > ul > li > a {
+	color:#555;
+	padding:5px 8px;
+}
+.nav > ul > li > a:hover {
+	border-bottom:1px solid #555;
+}
+.email {
+	background-color: #FFE7E7;
+}
+@media only screen and (max-width:550px) {
+	div.propic {
+		margin-top:40%;
+	}
+}
