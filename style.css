@@ -391,17 +391,31 @@ body {
         width: 40.29137%; }
         .page-header .page-title:last-child {
           margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      .page-header .page-title {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .page-header .page-title:last-child {
+          margin-right: 0; } }
     .page-header .page-title h1 {
       margin: 0;
       padding: 0;
       font-size: 30px;
       font-weight: 700;
       line-height: 31px; }
+      @media screen and (max-width: 480px) {
+        .page-header .page-title h1 {
+          text-align: center; } }
       .page-header .page-title h1 a {
         color: #2C2C2C; }
         .page-header .page-title h1 a span {
           font-weight: 400;
           display: block; }
+          @media screen and (max-width: 480px) {
+            .page-header .page-title h1 a span {
+              display: inline-block; } }
       .page-header .page-title h1 .headline {
         font-weight: 400;
         font-size: 18px;
@@ -424,6 +438,16 @@ body {
         width: 48.82117%; }
         .page-header .contact-info:last-child {
           margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      .page-header .contact-info {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        text-align: center;
+        padding: 0 0 30px; }
+        .page-header .contact-info:last-child {
+          margin-right: 0; } }
     .page-header .contact-info a {
       display: block;
       color: #333;
@@ -432,6 +456,10 @@ body {
       padding: 6px 0 14px; }
       .page-header .contact-info a i {
         margin-right: 10px; }
+    @media screen and (max-width: 480px) {
+      .page-header .contact-info a {
+        display: inline-block;
+        padding: 15px 10px 0; } }
   .page-header .header-quote {
     float: left;
     display: block;
@@ -457,6 +485,31 @@ body {
       line-height: 30px;
       padding: 0 0 20px 0;
       margin: 0 0 4px 0; }
+  .page-header .mobile-pro-pic {
+    display: none; }
+    .page-header .mobile-pro-pic span {
+      display: block;
+      border-radius: 100%;
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      position: relative; }
+      .page-header .mobile-pro-pic span img {
+        height: 100%;
+        position: absolute;
+        left: -10px; }
+    @media screen and (max-width: 480px) {
+      .page-header .mobile-pro-pic {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        display: block;
+        padding: 0 0 30px; }
+        .page-header .mobile-pro-pic:last-child {
+          margin-right: 0; }
+        .page-header .mobile-pro-pic span {
+          margin: 0 auto; } }
 
 .summary {
   max-width: 68em;
@@ -647,8 +700,11 @@ body {
       font-size: 20px;
       line-height: 26px;
       font-weight: 400;
-      margin: 31px 0 5px 0;
+      margin: 25px 0 5px 0;
       padding: 0; }
+      @media screen and (max-width: 768px) {
+        .education .info h3 {
+          margin-top: 0; } }
     .education .info span {
       display: block;
       font-size: 16px;
