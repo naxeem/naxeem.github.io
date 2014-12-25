@@ -344,6 +344,64 @@ body {
 	}
 }
 
+.showcase {
+	@include outer-container;
+
+	max-width: 940px;
+	padding: 45px 15px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		background-color: #333;
+	}
+	li {
+		margin: 0;
+		padding: 4px 0;
+		list-style: none;
+		overflow: hidden;
+		height: 380px;
+		transition: height .2s ease-out;
+
+		&:hover {
+			height: 605px;
+		}
+
+		@include media(max-width $tablet) {
+			height: auto;
+
+			&:hover {
+				height: auto;
+			}
+		}
+
+		img {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+
+.page-footer {
+	@include outer-container;
+
+	max-width: 940px;
+	padding: 72px 15px 45px;
+
+	p {
+		text-align: center;
+		color: #333;
+		font-size: 14px;
+		line-height:14px;
+
+		i {
+			color: #ed2e2e;
+			padding: 0 5px;
+		}
+	}
+}
+
 .title {
 	font-size: 25px;
 	font-weight: 400;
