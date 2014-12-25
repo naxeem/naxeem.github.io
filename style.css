@@ -492,12 +492,9 @@ body {
       border-radius: 100%;
       overflow: hidden;
       width: 150px;
-      height: 150px;
-      position: relative; }
+      height: 150px; }
       .page-header .mobile-pro-pic span img {
-        height: 100%;
-        position: absolute;
-        left: -10px; }
+        height: 100%; }
     @media screen and (max-width: 480px) {
       .page-header .mobile-pro-pic {
         float: left;
@@ -619,7 +616,8 @@ body {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%; }
+      width: 100%;
+      margin-top: 85px; }
       .experience:last-child {
         margin-right: 0; } }
   .experience ul {
