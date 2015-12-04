@@ -96,8 +96,13 @@ body {
 		padding: 5px 0;
 		border-radius: 3px;
 		margin: 0 0 10px;
-		border: 1px solid #000;
+		// border: 1px solid #000;
 		transition: margin .26s ease, width .26s ease;
+
+		&:first-child {
+			color: #000;
+			background-color: #ffff00;
+		}
 	}
 
 	i {
@@ -185,6 +190,25 @@ body {
 		@include animation(fadeInDown 1.0s both);
 	}
 
+	p {
+		font-family: "Crimson Text",serif;
+		font-size: 22px;
+		line-height: 1.428571429;
+		margin-bottom: 1em;
+		color: #000;
+	}
+
+	.text {
+		text-align: center;
+		transition: margin .26s ease, width .26s ease;
+
+		@include animation(fadeInUp 1.0s both);
+
+		a {
+			border-bottom: 2px solid #ffff00;
+		}
+	}
+
 }
 
 .work-place {
@@ -257,6 +281,10 @@ body {
 
 		&.last:after {
 			top: 10px;
+		}
+
+		&.inbetween:after {
+			display: none;
 		}
 	}
 
@@ -341,4 +369,38 @@ body {
 			padding: 0 5px;
 		}
 	}
+}
+
+.skills {
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+
+	@include animation(fadeInUp 1.0s both);
+
+	>span {
+		display: inline-block;
+		position: relative;
+		padding: 5px 0 0 20px;
+		margin: 5px 20px 5px 0;
+		transition: all .26s ease;
+
+		&:before {
+			content: " ";
+			display: block;
+			position: absolute;
+			top: 12px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			border: 1px dashed #000;
+			border-radius: 100%;
+			background-color: #ffff00;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
 }
