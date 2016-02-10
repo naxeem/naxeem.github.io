@@ -407,7 +407,7 @@ body {
     display: table; }
 
 .avatar {
-  background: #fff url(../images/me.jpg) no-repeat;
+  background: #fff url(../images/me.png) no-repeat;
   background-size: cover;
   width: 200px;
   height: 200px;
