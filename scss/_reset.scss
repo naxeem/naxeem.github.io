@@ -65,7 +65,7 @@ body {
 }
 
 a {
-	color: #000;
+	color: #333;
 	text-decoration: none;
 }
 
@@ -412,12 +412,12 @@ hr {
  */
 ::selection {
 	background: #ffff00;
-	color: #000;
+	color: #333;
 	text-shadow: none;
 }
 
 ::-moz-selection {
 	background: #ffff00;
-	color: #000;
+	color: #333;
 	text-shadow: none;
 }
