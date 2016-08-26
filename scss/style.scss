@@ -1,0 +1,44 @@
+@import "reset";
+@import "bourbon", "neat";
+
+$mobile: 480px;
+$tablet: 768px;
+$md: 992px;
+$lg: 1200px;
+
+@font-face{
+	font-family:'brandon-grotesque';
+	src:url('./fonts/BrandonGrotesque-Light.otf') format("opentype");
+	font-weight:300;
+}
+
+
+body {
+	font-family: 'brandon-grotesque', sans-serif;
+	background-color: #fff;
+	color: #333;
+}
+
+.header {
+	padding: 20px;
+
+	h1 {
+		margin: 0;
+		font-size: 2.2em;
+		text-transform: lowercase;
+	}
+
+	h2 {
+		margin: 0;
+		font-size: 18px;
+	}
+
+	.location {
+		font-size: 15px;
+		text-transform: lowercase;
+		padding: 3px 10px;
+		border: 1px solid;
+		width: 205px;
+		margin-top: 19px;
+	}
+}
