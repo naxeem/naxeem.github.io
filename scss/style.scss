@@ -6,45 +6,35 @@ $tablet: 768px;
 $md: 992px;
 $lg: 1200px;
 
-@font-face{
-	font-family:'brandon-grotesque';
-	src:url('./fonts/BrandonGrotesque-Light.otf') format("opentype");
-	font-weight:300;
-}
-
 
 body {
-	font-family: 'brandon-grotesque', sans-serif;
-	background-color: #fff;
-	color: #333;
+	font-family: 'Kaushan Script', cursive;
+	background-color: #1D1B28;
+	color: #ffff00;
 }
 
-.header {
-	padding: 20px;
-	max-width: 490px;
+a {
+	color: #888843;
+}
 
-	h1, p {
-		margin: 0;
-		font-size: 2.2em;
-		letter-spacing: 1px;
-		text-transform: lowercase;
-		font-weight: 300;
+.main {
+	padding: 15px;
+	text-align: center;
 
-		@include media(max-width $mobile) {
-			font-size: 2.1em;
-		}
+	p {
+		display: none;
 	}
+}
 
-	.give-me-space {
-		margin-top: 25px;
-	}
+h1 {
+	font-size: 5em;
+	margin: 16% 0 0;
+	padding: 0;
+}
 
-	.twitter {
-	    margin: 10px 2px;
-	}
-
-	.facebook {
-	    margin: 20px 2px;
-	}
-
+h2 {
+	font-size: 1.4em;
+	margin: 0 0 10px;
+	padding: 0;
+	font-style: italic;
 }
